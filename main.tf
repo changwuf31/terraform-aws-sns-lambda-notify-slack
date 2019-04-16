@@ -13,7 +13,7 @@ module "default_label" {
 }
 
 module "notify_slack" {
-  source               = "git::https://github.com/terraform-aws-modules/terraform-aws-notify-slack?ref=tags/v1.9.0"
+  source               = "git::https://github.com/terraform-aws-modules/terraform-aws-notify-slack?ref=master"
   create               = "${local.enabled}"
   create_sns_topic     = "${local.create_sns_topic}"
   create_with_kms_key  = "${local.create_with_kms_key}"
